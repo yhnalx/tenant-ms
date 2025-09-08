@@ -1,0 +1,124 @@
+/* ====== BODY & GLOBAL STYLES ====== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #8daed1;
+  padding-top: 56px; /* Adjusted to navbar height */
+}
+
+/* ====== NAVBAR ====== */
+.navbar {
+  background-color: rgb(12, 31, 71);
+  position: fixed;
+  top: 0;
+  left: 100;
+  width: 99%;
+  z-index: 1050;
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand {
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ====== SIDEBAR ====== */
+#sidebar {
+  position: fixed;
+  top: 70px;
+  left: -280px; /* Hide by default */
+  width: 280px;
+  height: 100%;
+  background-color: #bbc5fc !important;
+  padding: 140px 130px;
+  z-index: 1050;
+  box-shadow: 10px 0 13px rgba(15, 0, 0, 0.1);
+  flex-direction: column;
+  overflow-y: auto;
+  border-bottom-left-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+
+/* Only apply .show if you're toggling it */
+#sidebar.show {
+  left: 0 !important;
+}
+
+#sidebar ul {
+  padding: 0;
+  margin-top: 20px;
+  list-style: none;
+}
+
+#sidebar ul li {
+  padding: 7px 7px;
+  margin-bottom: 1px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 15px;
+  color: #000;
+  border-radius: 12px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#sidebarClose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#sidebar ul li:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+#mainContent.shifted {
+  margin-left: 250px;
+  transition: margin-left 0.3s ease;
+}
+/* ====== TOGGLERS ====== */
+#sidebarToggle {
+  position: fixed;
+  top: -4px;
+  left: 23px;
+  font-size: 2.3rem;
+  cursor: pointer;
+}
+
+#sidebarToggle:hover {
+  color: rgb(250, 248, 248);
+  padding: 5px;
+}
+
+#sidebarClose {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Optional hover effect */
+.hover-effect:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: background-color 0.2s ease;
+}
+
+/* Optional image transition */
+#sidebar img {
+  transition: transform 0.2s ease;
+}
+
+#sidebar a:hover img {
+  transform: scale(1.05);
+}

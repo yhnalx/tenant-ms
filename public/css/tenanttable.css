@@ -1,0 +1,58 @@
+/* Container spacing */
+.table thead {
+  background: #2c3e50;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin: 20px 0 15px;
+  color: #2c3e50;
+}
+
+/* Table styling */
+.container.my-5 table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.container.my-5 thead {
+    background-color: #ffc107; /* yellow header */
+    color: #fff;
+}
+
+.container.my-5 thead th {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.container.my-5 tbody td {
+    padding: 10px 15px;
+    border-top: 1px solid #dee2e6;
+}
+
+.container.my-5 tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Buttons */
+.container.my-5 tbody td .btn {
+    margin-right: 5px;
+    margin-bottom: 3px;
+    font-size: 0.85rem;
+}
+
+/* No lease info */
+.table thead {
+  background: #2c3e50;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+}

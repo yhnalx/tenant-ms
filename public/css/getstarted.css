@@ -1,0 +1,31 @@
+.fullscreen-header {
+  height: 100vh;
+  background-color: #0c1f47;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.btn-get-started {
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-get-started:hover {
+  background-color: #0e3775;
+}
+
+/* Optional: responsive text */
+.fullscreen-header h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+.fullscreen-header h5 {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}

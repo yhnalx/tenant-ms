@@ -1,0 +1,93 @@
+/* Container spacing */
+.container.my-5 {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 1rem;
+}
+
+/* Table base */
+.container.my-5 table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Table header */
+.container.my-5 thead {
+    background-color: #ffc107; /* Bootstrap warning color */
+    color: #fff;
+}
+
+.container.my-5 thead th {
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+/* Table body rows */
+.container.my-5 tbody tr {
+    border-bottom: 1px solid #dee2e6;
+    transition: background 0.3s;
+}
+
+.container.my-5 tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.container.my-5 tbody td {
+    padding: 10px 15px;
+    vertical-align: middle;
+}
+
+/* Buttons in actions column */
+.container.my-5 tbody td .btn {
+    margin-right: 5px;
+    margin-bottom: 3px;
+    font-size: 0.85rem;
+}
+
+/* No lease row */
+.container.my-5 tbody tr td.text-center {
+    font-style: italic;
+    color: #6c757d;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+    .container.my-5 table, 
+    .container.my-5 thead, 
+    .container.my-5 tbody, 
+    .container.my-5 th, 
+    .container.my-5 td, 
+    .container.my-5 tr {
+        display: block;
+    }
+
+    .container.my-5 thead tr {
+        display: none;
+    }
+
+    .container.my-5 tbody tr {
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #dee2e6;
+    }
+
+    .container.my-5 tbody td {
+        padding-left: 50%;
+        text-align: right;
+        position: relative;
+    }
+
+    .container.my-5 tbody td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        width: 45%;
+        padding-left: 10px;
+        font-weight: 600;
+        text-align: left;
+    }
+}

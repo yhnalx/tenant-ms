@@ -1,0 +1,122 @@
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin: 20px 0 20px;
+  color: #2c3e50;
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgb(0, 0, 0);
+}
+
+
+.table thead {
+  background: #2c3e50;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+}
+
+.table thead th {
+  padding: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.table td {
+  padding: 12px;
+  text-align: center;
+  font-size: 14px;
+  color: #000000;
+}
+
+.table td span.text-muted {
+  font-style: italic;
+  color: #ff0202;
+}
+
+/* Buttons inside table */
+.table .btn {
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 6px;
+  margin: 2px;
+}
+
+.table .btn-success {
+  background: #27ae60;
+  border: none;
+  color: #fff;
+}
+
+.table .btn-success:hover {
+  background: #219150;
+  transform: scale(1.05);
+}
+
+.table .btn-danger {
+  background: #e74c3c;
+  border: none;
+  color: #fff;
+}
+
+.table .btn-danger:hover {
+  background: #c0392b;
+  transform: scale(1.05);
+}
+
+/* Empty row styling */
+.table td[colspan="4"] {
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  color: #666;
+}
+
+.search-bar-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px; /* adds space between input and button */
+  margin: 1.5rem 0;
+}
+
+.search-input {
+  padding: 12px 15px;
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #26086da6;
+  box-shadow: 0 0 5px #4a107a86;
+}
+
+.search-btn {
+  padding: 10px 15px;
+  width: 130px;
+  margin-right: 480px;
+  border: none;
+  background-color: #0c1f47;
+  color: white;
+  border-radius: 50px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #ffd90042;
+}
+

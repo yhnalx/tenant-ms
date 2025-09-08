@@ -1,0 +1,128 @@
+/* === GENERAL STYLES === */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #8daed1;
+  margin: 0;
+  padding-top: 30px;
+}
+
+/* === NAVBAR === */
+.navbar {
+  background-color: rgb(12, 31, 71);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 100;
+  width:100%;
+  z-index: 1051;
+  padding: 8px 20px;
+  align-items: center;
+}
+
+
+.navbar-brand {
+  font-weight: 650;
+  color: #ffffff;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* === SIDEBAR === */
+#sidebar {
+  top: 56px;
+  left: -260px;  
+  background-color: #bbc5fc !important;
+  position: fixed;
+  top: 56px;
+  left: -260px;
+  width: 250px;
+  height: 100%;
+  padding: 20px 15px;
+  transition: left 0.3s ease;
+  z-index: 1050;
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+#sidebar.show {
+  left: 0;
+}
+
+#sidebarClose {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* === SIDEBAR LINKS === */
+#sidebar ul {
+  list-style: none;
+  padding: 60px 0 0 0;
+  margin: 0;
+}
+
+#sidebar ul li {
+  margin-bottom: 12px;
+}
+
+#sidebar ul li a {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background 0.2s ease;
+}
+
+#sidebar ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+/* === USER DROPDOWN IN SIDEBAR === */
+.user-dropdown-sidebar {
+  border-top: 1px solid rgba(254, 253, 255, 0.15);
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.user-dropdown-sidebar > a {
+  color: #000;
+  font-size: 1rem;
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.user-dropdown-sidebar > a:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+/* === MAIN CONTENT === */
+.main-content {
+  margin-top: 80px;
+  padding-left: 270px;
+  padding-right: 20px;
+  color: #1e293b;
+}
+
+/* === TOGGLE BUTTON === */
+#sidebarToggle {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  font-size: 1.8rem;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  z-index: 1100;
+}
+

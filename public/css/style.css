@@ -1,0 +1,48 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.form-section {
+  max-width: 500px;
+  margin: auto;
+}
+
+.card {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  border-radius: 10px;
+}
+
+.card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.card ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.card ul li {
+  margin-bottom: 0.3rem;
+}
+
+.navbar-brand,
+.nav-link {
+  font-weight: bold;
+}
+
+.navbar h1 {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+  .navbar h1 {
+    font-size: 1rem;
+  }
+
+  .card h4 {
+    font-size: 1rem;
+  }
+}

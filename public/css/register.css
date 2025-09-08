@@ -1,0 +1,130 @@
+/* login.css */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #8daed1;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.card {
+  width: 100%;
+  max-width: 500px; /* Adjust as needed */
+  margin-right: 88px;
+  border-radius: 19px;
+  border: none;
+  box-shadow: 0 6px 24px #00000026;
+  background-color: #f4f5f7;
+  margin-top: 70px;
+  padding: 30px; /* Optional: to give more space inside */
+}
+
+h4 {
+  font-weight: 600;
+  color: #0c1f47;
+}
+
+.form-label {
+  font-weight: 1000;
+}
+
+.form-control {
+  border-radius: 10px;
+  padding: 10px 30px;
+  font-size: 14px;
+  border: 4px solid #ced4da;
+}
+
+
+.form-group {
+  margin-bottom: 7px;
+  margin-right: 50px;
+}
+
+.btn-primary {
+  background-color: #0c1f47;
+  color: white;
+  border: none;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+p a {
+  text-decoration: none;
+  color: #0c1f47;
+  font-weight: 500;
+}
+
+/* Header Section Styling */
+.header-section {
+  background-color: #0c1f47;
+  color: white;
+  padding: 50px 40px;
+  text-align: left;
+  border-radius: 12px;
+  margin-right: 100px;
+  margin-bottom: 200px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fadeSlideIn 1s ease-out forwards;
+}
+
+/* Keyframes for fade-slide animation */
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional: Extra animation for h1 and h5 */
+.header-section h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  animation: fadeInText 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+.header-section h5 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 0;
+  animation: fadeInText 1s ease-in-out forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
+}
+
+@keyframes fadeInText {
+  to {
+    opacity: 1;
+  }
+}
+
+.logo-container img {
+  max-width: 250px; /* pinakamalaking size */
+  width: 100%;      /* mag-aadjust sa container */
+  height: auto;     /* para hindi ma-stretch */
+  margin-top: 150px;
+}
+
+@media (max-width: 576px) {
+  .logo-container img {
+    max-width: 150px; /* mas maliit sa mobile */
+  }
+}
+
+@media (max-width: 400px) {
+  .logo-container img {
+    max-width: 120px; /* mas maliit pa sa extra small screens */
+  }
+}
+
+
+

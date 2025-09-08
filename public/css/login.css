@@ -1,0 +1,262 @@
+/* Global Styles */
+body {
+    background-color: #8daed1;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.container-header {
+    text-align: center;
+    margin-bottom: 9px;
+    padding: 1px;
+    color: #000000;
+}
+
+.container-header h2 {
+    margin-bottom: 5px;
+    letter-spacing: 0.96px;
+    font-size: 2.1rem;
+    font-weight: 700;
+}
+
+.container-header p {
+    margin-top: 0px;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background-color: #0c1f47 !important;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 150px;
+    border-radius: 0;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 13px;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffd700 !important;
+}
+
+/* Layout Container */
+.full-screen-wrapper {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    padding: 20px;
+    gap: 3rem;
+    box-sizing: border-box;
+}
+
+/* Login Form */
+.login-form-wrapper {
+    flex: 0 0 560px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 210px;
+    margin-left: 55px;
+}
+
+.login-form {
+    background: #ffffff26;
+    padding: 25px;
+    border-radius: 20px;
+    font-weight: 500;
+    max-width: 420px;
+    text-align: center;
+    width: 100%;
+    border: 2px solid #27496d;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.login-form h3 {
+    font-weight: 600;
+    color: #0c1f47;
+    margin-bottom: 20px;
+}
+
+.login-form .form-label {
+    font-weight: 500;
+    color: #000000;
+    text-align: left;
+    display: block;
+}
+
+.login-form .form-control {
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 0.99rem;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.login-form .form-control:focus {
+    border-color: #0c1f47;
+    box-shadow: 0 0 0 0.2rem rgba(12, 31, 71, 0.25);
+}
+
+.login-form button {
+    background-color: #0c1f47;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.login-form button:hover {
+    background-color: #0c1f47;
+}
+
+.login-form small a {
+    text-decoration: none;
+    color: #0c1f47;
+    font-weight: 500;
+}
+
+.login-form small a:hover {
+    text-decoration: underline;
+}
+
+
+/* Row Wrappers */
+.card-top-row,
+.card-bottom-row {
+    display: flex;
+    margin-left: -1px;
+    margin-bottom: 50px;
+    margin-top: 1px;
+    gap: 6rem;
+    justify-content: flex-start;
+}
+
+/* Top Row: Services + Inquiries */
+.card-top-row .card {
+    flex: 1 1 calc(33.33% - 0.7rem);
+    max-width: 220px;
+    min-height: 140px;
+    margin-left: -80px;
+    margin-bottom: -100px;
+}
+
+/* Bottom Row: Vacant + Occupied + Expiring */
+.card-bottom-row .card {
+    flex: 1 1 calc(33.33% - 0.7rem);
+    width: 210px;
+    margin-top: 88px;
+    margin-left: -75px;
+    min-height: 150px;
+    gap: 1rem;
+}
+
+/* Card Base Style */
+.card {
+    border-radius: 12px;
+    background: #ffffffd9;
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+    padding: 12px;
+    width: 100%;
+    max-width: 320px;
+    margin: 0;
+    padding-top: 0;   
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/*  Card Borders */
+.card.border-warning { border-color: #ffc107 ; }
+.card.border-primary { border-color: #0d6efd ; }
+.card.border-danger { border-color: #dc3545 ; }
+.card.border-success { border-color: #198754; }
+
+/* Card Content */
+.card .card-title {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #0c1f47;
+    font-size: 1rem;
+}
+
+.card ul {
+    padding-left: 16px;
+    font-size: 0.85rem;
+    color: #333;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.card ul li::marker {
+    color: #000000;
+}
+
+
+.card-action-btn {
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #0c1f47; /* dark blue */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card-action-btn:hover {
+    background-color: #3c72e6; /* lighter blue */
+    transform: translateY(-2px);
+}
+
+.logo-container {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; /* or cover kung gusto mo puno */
+  width: 200px; /* laki ng container */
+  height: 90px;    /* taas ng container */
+  margin-left: 650px;
+  margin-bottom: -45px;
+}
+
+/* 📱 Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    .full-screen-wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .login-form-wrapper {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .card-top-row .card,
+    .card-bottom-row .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+
+
